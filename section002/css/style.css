@@ -1,0 +1,35 @@
+.wrap {}
+
+.header {
+    width: 1200px;
+    height: 200px;
+    background-color: #ff0;
+    margin: 0 auto;
+    /* 마진 0 auto 박스 가운데로 보내는 거 */
+}
+
+.beer .inner {
+    display: flex;
+    gap: 30px;
+    width: 1200px;
+    height: 600px;
+    padding: 32px 15px;
+    background-color: #ff0;
+    margin: 16px auto;
+}
+
+/* 박스높이 부모의 영향받음 */
+.beer .inner .box {
+    flex: 1;
+    background: #fff;
+    /* 축약형 */
+    border: 1px solid #ddd;
+}
+
+
+.footer {
+    width: 1200px;
+    height: 100px;
+    background-color: #ff0;
+    margin: 0 auto;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자 기본 01 - 우선순위</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<!-- body도 기본박스 -->
+<!-- body는 부모, div는 자식 -->
+
+<body>
+    <!-- div 기본박스 -->
+    <div id="a01">BOX - id 선택자</div>
+    <div class="a01">BOX - class 선택자</div>
+    <div>BOX - tag 선택자</div>
+    <!-- div는 순서대로 번호가 생기는데 0부터시작 -->
+    <!-- 이 번호로 자바스크립트 생성 -->
+
+    <!-- 줄바꿈 박스 -->
+    <hr />
+
+    <!-- 
+    박스의 중점
+    id를 줄 때 "이름 + 숫자(0을 앞에 붙여서)"
+    -->
+    <section id="sec01">
+        <div class="inner">
+            <p>Lorem ipsum dolor sit.</p>
+        </div>
+    </section>
+</body>
+
+</html>

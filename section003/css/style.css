@@ -1,0 +1,51 @@
+.box {
+    width: 1000px;
+    height: 100px;
+    /* 박스는 원래 높이를 주지 말 것 */
+    background: #f00;
+    margin: 100px;
+    /* 상우하좌 전부 다 100px 마진 들어감
+    마진은 겹쳐진다 */
+
+}
+
+.box01 {
+    background: #ff0;
+    width: 1500px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.box02 {
+    background: #00f;
+    width: 800px;
+    height: 200px;
+    margin: 0 0 0 auto;
+}
+
+/* inline 속성을 가진 태그는 size를 줄 수 없고
+좌우 margin, padding만 적용한다.
+다만, background가 있을 경우 background를 보이게 하지만
+공간을 차지하지는 않는다. */
+
+.inline01 {
+    margin: 100px;
+    padding: 100px;
+}
+
+.block {
+    display: block;
+}
+
+.size {
+    border: 10px solid #00f;
+    /* border(축약형): size style color */
+    width: 500px;
+    height: 100px;
+    margin: 50px;
+    padding: 100px;
+}
+
+.size01 {
+    box-sizing: border-box;
+}

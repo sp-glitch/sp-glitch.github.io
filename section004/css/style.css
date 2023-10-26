@@ -1,0 +1,76 @@
+.main_content {
+    padding: 120px 0;
+    /* 8의 배수로 쓰기 */
+    background: #f9f9f9;
+}
+
+.main_content h2 {
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
+    margin: 0 0 16px 0;
+}
+
+.main_content p {
+    font-size: 16px;
+    text-align: center;
+    margin: 0 0 32px 0;
+}
+
+
+.main_content .inner {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.main_content .inner figure {
+    flex: 1;
+    /* 한칸씩 차지하라는 뜻 */
+}
+
+.main_content .img_box {
+    margin: 0 0 40px 0;
+    overflow: hidden;
+    /* overflow = 박스에서 흘러나가지 말게(이미지가) */
+}
+
+.main_content .img_box img {
+    transition: 0.5s;
+}
+
+
+.main_content .img_box:hover img {
+    transform: scale(1.2);
+    /* 자기 자신만 변하고 레이아웃을 깨지 않음 */
+
+}
+
+.main_content .inner strong {
+    position: relative;
+    display: block;
+    /* 블록을 주면 옆으로 긴 박스가 만들어져서
+    글이 자동으로 밑으로 감 */
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 0 14px 0;
+    text-align: center;
+}
+
+
+.main_content .inner strong::before {
+    content: "";
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 2px;
+    height: 40px;
+    background: #369;
+}
+
+.main_content .inner span {
+    display: block;
+    text-align: center;
+    line-height: 20px;
+}
